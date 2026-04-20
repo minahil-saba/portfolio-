@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background: black;
+  color: white;
+}
+
+::selection {
+  background: white;
+  color: black;
+}
+
+/* Custom Scrollbar for 2026 */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+  color: transparent;
+}
+
+.glass-glow {
+  box-shadow: 0 0 50px -12px rgba(139, 92, 246, 0.25);
+}
