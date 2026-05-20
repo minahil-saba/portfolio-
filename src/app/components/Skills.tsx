@@ -53,7 +53,7 @@ export const Skills = () => {
                   <Database className="text-blue-400 mb-4" size={32} />
                   <h3 className="text-2xl font-bold mb-2">Scalable Backend</h3>
                   <div className="flex flex-wrap gap-2">
-                    {["Node.js", "REST APIs", "Next.js API Routes", "MySQL", "MongoDB"].map((s) => (
+                    {["Node.js", "Python", "Flask", "REST APIs", "Next.js API Routes", "MySQL", "MongoDB"].map((s) => (
                       <span key={s} className="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em]">{s}</span>
                     ))}
                   </div>
@@ -87,7 +87,7 @@ export const Skills = () => {
             <GlassCard className="h-full bg-gradient-to-br from-pink-600/10 to-transparent">
               <Brain className="text-pink-400 mb-4" size={32} />
               <h3 className="text-xl font-bold mb-2">AI / Computer Vision</h3>
-              <p className="text-xs text-white/40 uppercase tracking-widest font-bold">YOLO • CV Pipelines</p>
+              <p className="text-xs text-white/40 uppercase tracking-widest font-bold">YOLO • TensorFlow • CV Pipelines</p>
             </GlassCard>
           </motion.div>
 

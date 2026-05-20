@@ -7,9 +7,22 @@ import { cn } from '../../lib/utils';
 
 import imgCars from "figma:asset/51933cbaf7c8a48f7448bdff42c37e9fe953733e.png";
 import imgRestaurant from "figma:asset/3edf37563480ec8119f198cf9f73469d90f39648.png";
+import imgSolarPak from "../../assets/solarpak.png";
+import imgZirconLabs from "../../assets/zirconlabs.png";
+import imgStayhome from "../../assets/stayhome.png";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "Solar Pak — Fault Detection & Optimization",
+      description: "A YOLO-based computer vision pipeline that processes user-uploaded panel images, classifies surface defects (cracks, hotspots, soiling) with >85% detection accuracy, and returns actionable maintenance recommendations. Architected a Next.js API backend with a rule-based recommendation engine and MongoDB data persistence.",
+      tag: "AI / Computer Vision / FYP",
+      tech: ["Next.js", "TypeScript", "MongoDB", "YOLO", "REST APIs", "Tailwind"],
+      image: imgSolarPak,
+      link: "https://solarpak.shop/",
+      github: "https://github.com/minahil-saba",
+      featured: true
+    },
     {
       title: "ZR Cars Dealership",
       description: "A comprehensive client-based luxury automotive platform. Features high-performance vehicle filtering, dynamic inventory management, and immersive visual storytelling built for scale and speed.",
@@ -18,15 +31,15 @@ export const Projects = () => {
       image: imgCars,
       link: "https://carwebsite-seven.vercel.app",
       github: "https://github.com/minahil-saba/carwebsite",
-      featured: true
+      featured: false
     },
     {
-      title: "Solar AI — Fault Detection & Optimization",
-      description: "A YOLO-based computer vision pipeline that processes user-uploaded panel images, classifies surface defects (cracks, hotspots, soiling) with >85% detection accuracy, and returns actionable maintenance recommendations. Architected a Next.js API backend with a rule-based recommendation engine and MongoDB data persistence.",
-      tag: "AI / Computer Vision / FYP",
-      tech: ["Next.js", "TypeScript", "MongoDB", "YOLO", "REST APIs", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1615232714706-6b3adc67138b",
-      link: "#",
+      title: "ZirconLabs — Premium Software Agency Website",
+      description: "A complete, modern SaaS software company website built for a premium software agency. Features fluid 3D animations, a custom design system, and production-grade architecture with a Next.js 14 backend, MongoDB data layer, server-side rendering, and optimized performance.",
+      tag: "Professional Client Work",
+      tech: ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js", "MongoDB"],
+      image: imgZirconLabs,
+      link: "https://companywebsite-indol.vercel.app/",
       github: "https://github.com/minahil-saba",
       featured: false
     },
@@ -37,6 +50,16 @@ export const Projects = () => {
       tech: ["Next.js", "TypeScript", "Tailwind CSS", "MySQL", "Node.js"],
       image: imgRestaurant,
       link: "https://inquisitive-tapioca-88032c.netlify.app/",
+      github: "https://github.com/minahil-saba",
+      featured: false
+    },
+    {
+      title: "Stayhome — Real Estate Agency Website",
+      description: "A modern real estate agency website featuring dynamic property listings, location-based search, agent profiles, and an intuitive property browsing experience. Built with a component-driven architecture for seamless property discovery and inquiry management.",
+      tag: "Frontend Development",
+      tech: ["React", "TypeScript"],
+      image: imgStayhome,
+      link: "https://staticfile-fed5d.wasmer.app/",
       github: "https://github.com/minahil-saba",
       featured: false
     },
