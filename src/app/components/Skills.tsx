@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Database, Layout, PenTool, Terminal, Sparkles, Cpu, Globe, Rocket, Brain, Wrench } from 'lucide-react';
+import { Database, Layout, PenTool, Cpu, Brain, Wrench, Bot } from 'lucide-react';
 import { GlassCard } from './GlassCard';
 
 export const Skills = () => {
@@ -19,7 +19,7 @@ export const Skills = () => {
         </div>
 
         {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:grid-rows-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {/* Main Frontend Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export const Skills = () => {
               <h3 className="text-2xl font-bold mb-4">Frontend Engineering</h3>
               <p className="text-white/50 mb-8 max-w-sm text-sm">Crafting immersive, high-performance user interfaces with modern frameworks.</p>
               <div className="flex flex-wrap gap-3">
-                {["React.js", "Next.js", "TypeScript", "JavaScript ES6+", "Tailwind CSS", "HTML5", "CSS3"].map((s) => (
+                {["React.js", "Next.js", "TypeScript", "JavaScript ES6+", "Tailwind CSS", "Three.js", "HTML5", "CSS3"].map((s) => (
                   <span key={s} className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-bold text-white/80 uppercase tracking-widest">{s}</span>
                 ))}
               </div>
@@ -53,7 +53,7 @@ export const Skills = () => {
                   <Database className="text-blue-400 mb-4" size={32} />
                   <h3 className="text-2xl font-bold mb-2">Scalable Backend</h3>
                   <div className="flex flex-wrap gap-2">
-                    {["Node.js", "Python", "Flask", "REST APIs", "Next.js API Routes", "MySQL", "MongoDB"].map((s) => (
+                    {["Node.js", "Python", "Flask", "FastAPI", "REST APIs", "Next.js API Routes", "MySQL", "MongoDB", "Supabase", "Docker"].map((s) => (
                       <span key={s} className="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em]">{s}</span>
                     ))}
                   </div>
@@ -63,12 +63,36 @@ export const Skills = () => {
             </GlassCard>
           </motion.div>
 
-          {/* UI/UX Card */}
+          {/* AI Tools Card — NEW */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
+            className="md:col-span-2"
+          >
+            <GlassCard className="h-full bg-gradient-to-r from-yellow-600/10 to-transparent">
+              <div className="flex justify-between items-start">
+                <div>
+                  <Bot className="text-yellow-400 mb-4" size={32} />
+                  <h3 className="text-2xl font-bold mb-2">AI Tools & Workflows</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {["Cursor", "Claude", "ChatGPT", "GitHub Copilot"].map((s) => (
+                      <span key={s} className="text-[10px] font-black text-yellow-400 uppercase tracking-[0.2em]">{s}</span>
+                    ))}
+                  </div>
+                  <p className="text-xs text-white/30 mt-3">Code generation • Debugging • Refactoring • Documentation</p>
+                </div>
+              </div>
+            </GlassCard>
+          </motion.div>
+
+          {/* UI/UX Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
           >
             <GlassCard className="h-full bg-gradient-to-br from-emerald-600/10 to-transparent">
               <PenTool className="text-emerald-400 mb-4" size={32} />
@@ -82,12 +106,12 @@ export const Skills = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.4 }}
           >
             <GlassCard className="h-full bg-gradient-to-br from-pink-600/10 to-transparent">
               <Brain className="text-pink-400 mb-4" size={32} />
               <h3 className="text-xl font-bold mb-2">AI / Computer Vision</h3>
-              <p className="text-xs text-white/40 uppercase tracking-widest font-bold">YOLO • TensorFlow • CV Pipelines</p>
+              <p className="text-xs text-white/40 uppercase tracking-widest font-bold">YOLOv8 • CLIP • OpenCV • FastAPI • Docker</p>
             </GlassCard>
           </motion.div>
 
@@ -96,13 +120,13 @@ export const Skills = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.5 }}
           >
             <GlassCard className="h-full bg-gradient-to-r from-orange-600/10 to-transparent">
               <Wrench className="text-orange-400 mb-4" size={32} />
               <h3 className="text-xl font-bold mb-2">Dev Tools</h3>
               <div className="flex flex-wrap gap-2">
-                {["Git", "GitHub", "Postman", "VS Code", "Cursor"].map((s) => (
+                {["Git", "GitHub", "Postman", "VS Code", "Cursor", "Docker"].map((s) => (
                   <span key={s} className="text-[10px] font-black text-orange-400 uppercase tracking-[0.2em]">{s}</span>
                 ))}
               </div>

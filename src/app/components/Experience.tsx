@@ -19,7 +19,7 @@ export const Experience = () => {
     {
       role: "UI/UX Design Intern",
       company: "Tehzeeb Bakers",
-      duration: "Aug 2025 — Oct 2025",
+      duration: "Aug 2024 — Oct 2024",
       description: "Produced 12 high-fidelity Figma screens for a customer-facing digital product, cutting design-to-handoff time by improving annotation quality and dev-ready specs."
     }
   ];

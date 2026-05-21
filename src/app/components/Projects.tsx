@@ -15,9 +15,9 @@ export const Projects = () => {
   const projects = [
     {
       title: "Solar Pak — Fault Detection & Optimization",
-      description: "A YOLO-based computer vision pipeline that processes user-uploaded panel images, classifies surface defects (cracks, hotspots, soiling) with >85% detection accuracy, and returns actionable maintenance recommendations. Architected a Next.js API backend with a rule-based recommendation engine and MongoDB data persistence.",
+      description: "Full-stack AI solar energy platform — 7-class YOLOv8 fault detection (>85% mAP) with CLIP zero-shot validation, a 12-stage post-processing pipeline producing real-time Health Scores (0–100), a physics-based recommendation engine for 8 Pakistani cities, and a complete e-commerce + admin panel with cart, checkout, PDF invoices & analytics. Served via Python FastAPI microservice on Google Cloud Run with Docker.",
       tag: "AI / Computer Vision / FYP",
-      tech: ["Next.js", "TypeScript", "MongoDB", "YOLO", "REST APIs", "Tailwind"],
+      tech: ["Next.js 15", "TypeScript", "Python FastAPI", "YOLOv8", "CLIP", "MongoDB Atlas", "Docker", "Google Cloud Run"],
       image: imgSolarPak,
       link: "https://solarpak.shop/",
       github: "https://github.com/minahil-saba",

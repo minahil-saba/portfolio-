@@ -6,6 +6,8 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Experience } from './components/Experience';
 import { Contact } from './components/Contact';
+import { Education } from './components/Education';
+import { Leadership } from './components/Leadership';
 import { AdminPanel } from './components/AdminPanel';
 import { Toaster } from 'sonner';
 
@@ -39,6 +41,8 @@ function App() {
           <Experience />
           <Skills />
           <Projects />
+          <Education />
+          <Leadership />
           <Contact />
         </>
       )}
