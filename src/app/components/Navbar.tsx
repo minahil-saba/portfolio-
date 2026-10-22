@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 export const Navbar = ({ onAdminClick }: { onAdminClick?: () => void }) => {
@@ -75,15 +75,6 @@ export const Navbar = ({ onAdminClick }: { onAdminClick?: () => void }) => {
         <div className="flex items-center gap-4">
           <motion.a
             whileHover={{ scale: 1.1 }}
-            href="https://wa.me/923330542268"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:block p-2 text-white/40 hover:text-emerald-400 transition-colors"
-          >
-            <MessageCircle size={18} />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.1 }}
             href="https://github.com/minahil-saba"
             target="_blank"
             rel="noopener noreferrer"
@@ -103,9 +94,7 @@ export const Navbar = ({ onAdminClick }: { onAdminClick?: () => void }) => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://wa.me/923330542268"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="px-6 py-2 rounded-full bg-white text-black text-[10px] font-black uppercase tracking-widest hover:bg-emerald-500 hover:text-white transition-all"
           >
             Hire
@@ -131,15 +120,6 @@ export const Navbar = ({ onAdminClick }: { onAdminClick?: () => void }) => {
             className="absolute top-full left-0 right-0 mt-4 md:hidden bg-black/90 backdrop-blur-3xl border border-white/10 rounded-3xl overflow-hidden p-8"
           >
             <div className="flex flex-col space-y-6">
-              <a
-                href="https://wa.me/923330542268"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-2xl font-black tracking-tighter text-emerald-500"
-              >
-                WHATSAPP
-              </a>
               {navLinks.map((link) => (
                 <a
                   key={link.name}

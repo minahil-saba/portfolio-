@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Send, ArrowRight, MessageCircle, Phone } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, ArrowRight } from 'lucide-react';
 import { GlassCard } from './GlassCard';
 import { toast } from 'sonner';
 import { projectId, publicAnonKey } from '/utils/supabase/info';
@@ -75,29 +75,9 @@ export const Contact = () => {
                   <p className="text-[10px] font-black uppercase tracking-[0.4em] text-white/20 mb-2">Direct Mail</p>
                   <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tighter group-hover:text-blue-500 transition-colors underline decoration-white/10 underline-offset-8 break-all">sabaminahil8@gmail.com</p>
                 </motion.a>
-
-                <motion.a 
-                  whileHover={{ x: 10 }}
-                  href="https://wa.me/923330542268"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block group"
-                >
-                  <p className="text-[10px] font-black uppercase tracking-[0.4em] text-white/20 mb-2">WhatsApp</p>
-                  <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tighter group-hover:text-emerald-500 transition-colors underline decoration-white/10 underline-offset-8">03330542268</p>
-                </motion.a>
               </div>
 
               <div className="flex gap-10 items-center">
-                <motion.a 
-                  whileHover={{ y: -5 }} 
-                  href="https://wa.me/923330542268" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-white/40 hover:text-emerald-400 font-black uppercase tracking-widest text-[10px] transition-all"
-                >
-                  <MessageCircle size={16} /> WhatsApp
-                </motion.a>
                 <motion.a 
                   whileHover={{ y: -5 }} 
                   href="https://github.com/minahil-saba" 
@@ -176,7 +156,6 @@ export const Contact = () => {
         <footer className="mt-40 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.4em] text-white/20">
           <p>© 2026 MINAHIL SABA — ALL RIGHTS RESERVED</p>
           <div className="flex gap-8">
-            <a href="https://wa.me/923330542268" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">WhatsApp</a>
             <a href="https://github.com/minahil-saba" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/minahil-saba-0748a625a/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
             <a href="#" className="hover:text-white transition-colors">Instagram</a>
